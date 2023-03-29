@@ -3,27 +3,82 @@
    <link rel="stylesheet" href="../styles.css">
    <link href="https://api.fonts.coollabs.io/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="UTF-8">
-    <head>
-        <link rel="icon" type=image/x-icon" href="../rb.png">
-    </head> 
-    <body>
-        <div class="border">
-            <div class="navbar">
-                <ul>
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a id="active" href="../recipes.html">RECIPES</a></li>
-                    <li><a href="../store.html">STORE</a></li>
-                    <li style="float:right;margin-right:5%;";><a href="../about.html">ABOUT</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="recipe">
-            <h1>Canned Spinach Soup</h1>
-            <p><a style="text-decoration: none;font-size:62%;" href="../recipes.html">go back...</a>
-            <div id="date">1-26-2023</div>
-            <div id="arparagraph">
-Out of stock
-            </div>
-        </div>
-    </body>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../recipes.html">Recipes</a></li>
+                <li><a id="activePage" href="../store.html">Store</a></li>
+                <li style="float:right"><a href="../about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Spinach Stew</h1>
+            <img style="width:512px;height: 512px;" src="spinach.jpeg">
+        <new>
+
+Ingredients:
+2 tablespoons olive oil
+1 onion, chopped
+2 cloves garlic, minced
+1 teaspoon ground cumin
+1 teaspoon ground coriander
+1/2 teaspoon ground turmeric
+1/2 teaspoon ground cinnamon
+1/2 teaspoon ground ginger
+1/4 teaspoon cayenne pepper (optional)
+1 can (14.5 oz) diced tomatoes
+1 can (15 oz) chickpeas, drained and rinsed
+2 cups vegetable broth
+1 pound fresh spinach leaves, washed and trimmed
+Salt and pepper to taste
+
+
+
+<div class="transactionBox">
+<h1>Product Purchase Form</h1>
+<form action="process_purchase.php" method="post">
+<label for="product_name">Product Name:</label>
+<select id="payment_method" name="payment_method">
+<option value="">Spinach Stew</option>
+</select>
+<label for="price">Price per unit USD:</label>
+<select id="payment_method" name="payment_method">
+<option value="">$13.99</option>
+</select>
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" max="10" required>
+<!--<label for="total">Total:</label>-->
+<!--<input type="number" id="total" name="total" readonly>-->
+<label for="shipping_address">Shipping Address:</label>
+<textarea id="shipping_address" name="shipping_address" required></textarea>
+<label for="payment_method">Payment Method:</label>
+<select id="payment_method" name="payment_method" required>
+<option value="">Select Payment Method</option>
+<option value="credit_card">Credit Card</option>
+<option value="paypal">PayPal</option>
+<option value="bank_transfer">Bank Transfer</option>
+</select><br><br>
+<!--<input type="submit" value="Next">-->
+<div class="fakebutton"><a href="./monkeys.html">Continue</a></div>
+</form>
+        </new>
+    </main>
+
+    <footer>
+            <ul>
+                <li><a href="#">www.matcsecdesignd.com</a></li>
+            </ul>
+                        <p id="bogus">
+
+The name "Rubber Boot Stew" is a paradoxical expression that speaks to the complexities of the human condition. It symbolizes the idea that even the most seemingly mundane and unappealing things in life can have profound meaning when viewed from the right perspective. The image of a rubber boot, often associated with manual labor and the working class, is elevated to the level of a stew, a dish that is warm, comforting, and nourishing. This represents the idea that even the most humble and unassuming aspects of life can hold great value and significance. The name "Rubber Boot Stew" is a reminder to appreciate the beauty and depth in all things, no matter how unconventional they may seem.
+
+
+
+</p>
+    </footer>
+</body>
 </html>

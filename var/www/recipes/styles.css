@@ -1,152 +1,205 @@
-body{
-    background-color: #1d1f21;
-    background-image: url("wall.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    min-width: 5vh;
-    max-width: 100vw;
-    margin: auto;
-    overflow: auto;
+/*Generic Stuff*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Generic Stuff*/
+
+/* The Page Itself */
+body {
+   min-height: 100vh;
+   background: linear-gradient(rgba(46, 52, 64, 0.75),rgba(46,52,64,0.75)),url(bg2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-.border {
-   margin-right: 5%; 
-   margin-left: 5%; 
+nav {
+    background-color: rgba(76,86,106, 0.8);
+    min-height: 5vh;
+    min-height: 5vh;
+    padding-right: 0.3vh;
+    padding-left: 0.3vh;
 }
 
-.navbar ul{
+nav ul li {
+    float: left;
+    font-size: 2vh;
     padding: 1.3vh;
-    background-color: rgba(90,90,90,0.5);
-}
-
-.navbar li {
-   list-style-type: none; 
-   display: inline;
-   padding: 0 1vw;
-   /*font-size: 1.3em;*/
-   font-size: 130%;
-}
-
-#active {
-    color: white;
-}
-
-.navbar a {
-    color:lightgray;
-}
-
-.main {
-}
-.main p {
-    color: white;
-    text-align: center;
-}
-
-.nodin p {
-    margin-top: 8vh;
-    font-size: 50px;
-    text-align: center;
-    color: white;
-}
-
-#recents {
-    color:white;
-    text-align: center;
-    font-size: 25px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -2vh;
-    padding: 2vh;
-}
-.recetPosts ul li, .recetPosts ul li a {
-    font-size: 25px;
-    color: lightgrey;
-    text-align: center;
     list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -2vh;
-    padding-bottom: 2.5vh;
 }
-.crew p{
+footer ul li {
+    font-size: 2vh;
+    padding: 1.5vh;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li a, footer ul li a {
     color: white;
-    margin-top: -1vh;
-    font-size: 35px;
-    text-align: center;
-    line-height: 15px;
-    padding: 0.25% 0%;
+    text-decoration: none;
+    font-size: 100%;
 }
-.crew h1 {
-    margin-top:4vh;
+footer ul li a {
+    font-weight: bolder;
+}
+
+main {
+    min-height: 90vh;
+    padding-right: 10vh;
+    padding-left: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     color: white;
-    font-size: 55px;
     text-align: center;
 }
-
-.recipes{
-    margin-top: 6vh;
-    font-size: 32px;
-    text-align: center;
-}
-.recipes a {
-    color:white;
-}
-.recipes h1, .recipes h3 {
-    color:white;
-}
-.recipes p {
-    margin-top: -2vh;
+footer {
+    background-color: rgba(76,86,106, 1.0);
+    min-height: 5vh;
 }
 
+/* The Page Itself */
 
-.recipe{
-    margin-top: 6vh;
-    font-size: 32px;
-    text-align: center;
-}
-.recipe a {
-    color:white;
-}
-.recipe h1 {
-    color:white;
-}
-.recipe p {
-    margin-top: -5vh;
+/*simple*/
+h1 {
     color: white;
+    font-size: 6.5vh;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+    padding-bottom: 1vh;
 }
-#date {
-    font-size:18px;
-    color:lightgray;
+h3 {
+    font-size: 3.5vh;
+    display: inline;
 }
-#artitle {
-    margin-top: -1.8vh;
-    color:white;
-}
+/*simple*/
 
-#arparagraph {
-    margin-top: 1.5vh;
-    color:white;
-    font-size: 20px;
-    max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-}
-#logoAlign {
-    display: block;
-    margin-top: -2.5vh;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    width: 128px;
-    height: 128px;
-}
-
+/*Don't Ask*/
 #bogus {
+    color: lightgray;
     font-size: 18px;
     margin-right: 15%;
     margin-left: 15%;
+    white-space: pre-wrap;
 }
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 128px;
+    width: 128px;
+}
+new {
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 2.5vh;
+}
+new a {
+    display: inline;
+    color: white;
+    font-size: 2.5vh;
+}
+
+#activePage {
+    font-weight: bolder;
+}
+
+/*
+
+ * Scrollbar
+
+ */
+
+/* width */
+::-webkit-scrollbar {
+  width: 0vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*
+
+ * Scrollbar
+
+ */
+
+
+.transactionBox {
+    background-color: rgba(0,0,0,0.5);
+    text-align: left;
+    padding: 2vh;
+    width: 100%;
+}
+.transactionBox button {
+    width: 28vw;
+    height: 2vh;
+    background-color: lightcyan;
+}
+
+/*Chat GPT Stuff*/
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="number"], textarea, select {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+input[readonly] {
+	background-color: #eee;
+}
+
+textarea {
+	height: 100px;
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.fakebutton a {
+    background-color: lightblue;
+    text-decoration: none;
+    padding: 1vh;
+    margin: 1vh;
+}
+
+/*Chat GPT Stuff*/
+
